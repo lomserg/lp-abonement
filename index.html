@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Экотелеком интернет провайдер | Сэкономьте до 20% с абонементом на услуги «Экотелеком»</title>
+    <script defer src="app.js"></script>
+  </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-1 ">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+              <small><img class="h6" src="./img/logo.svg" width="75px" alt=""></small>
+            </a>
+            
+            <button 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-nav">
+                        <a href="#tarifs" class="nav-link">Тарифы</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a href="#questions" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a href="#instructions" class="nav-link">Инструкции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Showcase -->
+    <!-- <section class="bg-dark text-light p-6 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>ПОЛЬЗУЙСЯ БОЛЬШЕ — <span class="text-warning">ПЛАТИ МЕНЬШЕ!</span></h1>
+                    <p class="lead my-md-5">Подключи абонемент на полгода или год</p>
+                    <a href="#tarifs"> <button
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#enroll"
+                  >
+                    Подробнее
+                  </button></a>
+                </div>
+                <img class="img-fluid w-50" src="./img/pngwing.png" alt="">
+            </div>
+        </div>
+    </section> -->
+    <!-- Showcase 2 -->
+    <section class="bg-image ">
+     
+       
+          <div class="hero-text flex col container text-light">
+                  <div class="text-wrap">
+                    <h1 class="hero-title " >ВЫ<span class="text-warning" style="color:#ffde00; ">ГОД</span>НОЕ ПРЕДЛОЖЕНИЕ!</h1>
+                    <p class="lead my-md-3" >Экономь до 20% при подключении абонемента
+                    </p>
+                  </div>
+                  <a href="#tarifs"> <button
+                  class="btn btn-warning flex col text-light btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#enroll"
+                >
+                  Подробнее
+                </button></a> 
+      
+         </div>
+      
+  </section>
+  
+ 
+    <!-- economy -->
+    <section class="p-md-5 my-5">
+        <div class="container hidden">
+            
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img class="img-fluid rounded " src="./img/wallet.jpg" alt="">
+                </div>
+                <div class=" col-md p-md-5">
+                    <h2 >Экономь до 2400 ₽</h2>
+                    <p class=" lead">
+                        Оплати услуги на 6 или 12 месяцев и получи существенную скидку! Абонемент — привычный способ сэкономить: платишь вперед и получаешь скидку. Никаких подводных камней и сложных условий, только выгода.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Advantages -->
+      <section class="bg-primary rounded text-light p-md-5 m-md-4" id="advantages">
+        <div class="container">
+            <div class="row d-flex advantages hidden text-center g-4 p-md-5">
+                <div class="col-md">
+                    
+                        <h1><i class="bi bi-hand-thumbs-up"></i></h1>
+                        <h3>Улучшение тарифа</h3>
+                        <p>При сохранении стандартной абонентской платы можно улучшить тариф</p>
+                  
+
+                </div>
+                <div class="col-md">
+                    <h1><i class="bi bi-calendar-check"></i></h1>
+                    <h3>Экономия времени</h3>
+                    <p>Не нужно ежемесячно делать рутинную работу по оплате </p>
+
+                </div>
+                <div class="col-md">
+                    <h1><i class="bi bi-toggle-on"></i>
+                    </h1>
+                    <h3>Постоянный доступ</h3>
+                    <p>Интернет не отключится даже в ответственный момент </p>              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Advantages -->
+    <section id="tarifs">
+      <div class="container">
+        <h2 class="p-3 text-center hidden">Стоимость абонементов
+        </h2>
+        <div class="table-responsive hidden">
+          <h4 class="p-3 text-center ">«Интернет»
+          </h4>
+          <table class="table table-sm ">
+            <tbody>
+              <tr class="table-primary ">
+                <th width="30%" class="a_c b_b align-middle h6 h3-md text-center"><small>Тарифный план</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Срок, мес</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость абонемента, ₽</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость при абонементе<sup>*</sup>, ₽/мес</small></th>
+               </tr>
+              <tr>
+                <td rowspan="2" class="align-middle "><b>СТАРТ</b> <nobr>(100 Мбит/с) —</nobr> <nobr>499 ₽/мес</nobr></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">4788</td>
+                <td class="a_c text-center">399</td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">2544</td>
+                <td class="a_c text-center">424</td>
+               </tr>
+              <tr>
+                <td rowspan="2" class="align-middle " text-left><b>ХИТ</b> <nobr>(250 Мбит/с) —</nobr> <nobr>599 ₽/мес</nobr></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">5748</td>
+                <td class="a_c text-center">479</td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3054</td>
+                <td class="a_c text-center">509</td>
+               </tr>
+              <tr>
+                <td rowspan="2" class="align-middle "><b>МЕГА</b> (500 Мбит/с) — 699 ₽/мес</td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559</td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594</td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+        <div class="table-responsive hidden">
+          <h4 class="p-3 text-center">«Интернет+ТВ»
+          </h4>
+          <table class="table table-sm "> 
+            <tbody> 
+              <tr class="table-primary"> 
+                <th width="30%" class="a_c b_b align-middle h6 h3-md text-center"><small>Тарифный план</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Срок, мес</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость абонемента, ₽</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость при абонементе<sup>*</sup>, ₽/мес</small></th>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><small><b>СТАРТ+ТВ</b> (100Мбит/с+<wbr>120ТВ)&nbsp;— <nobr>599 ₽/мес</nobr></small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">5748</td>
+                <td class="a_c text-center">479</td>
+               </tr>
+              <tr class="text-center"> 
+                <td class="a_c ">6</td>
+                <td class="a_c ">3054</td>
+                <td class="a_c ">509</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><small><b>СТАРТ+КИНО</b> (100Мбит/с+<wbr>120ТВ+<wbr>START/<wbr>PREMIER/<wbr>MORE.TV)&nbsp;— <nobr>689 ₽/мес</nobr></small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559</td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><small><b>ХИТ+ТВ</b> (250Мбит/с+<wbr>210ТВ+PREMIER)&nbsp;— <nobr>749 ₽/мес</nobr></small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">7188</td>
+                <td class="a_c text-center">599</td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3824</td>
+                <td class="a_c text-center">637</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle text-lg-left pl-3"><small><b>УЛЬТРА+КИНО</b> (350Мбит/с+<wbr>270ТВ+<wbr>Amediateka/<wbr>PREMIER/<wbr>more.tv/<wbr>START)&nbsp;— <nobr>879 ₽/мес</nobr></small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">8438</td>
+                <td class="a_c text-center">703</td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">4482</td>
+                <td class="a_c text-center">747</td>
+               </tr>
+             </tbody>
+           </table>
+           <p>* Стоимость за месяц при подключенном абонементе указана справочно.
+            Для некоторых архивных тарифных планов абонементы доступны, подключить их можно в личном кабинете.</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="tarifs">
+
+      
+      <div class="container ">
+        <h2 class="p-3 text-center  hidden">Стоимость абонементов
+        </h2>
+        <div class="table-responsive">
+          <h4 class="p-3 text-center hidden">«Интернет»
+          </h4>
+          <table class="table table-sm hidden">
+            <tbody>
+              <tr class="table-primary ">
+                <th width="30%" class="a_c b_b align-middle h6 h3-md text-center"><small>Тарифный план</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Срок, мес</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость абонемента, ₽</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center"><small>Стоимость при абонементе<sup>*</sup>, ₽/мес</small></th>
+               </tr>
+              <tr>
+       
+           
+              <tr>
+                <td rowspan="2" class="align-middle"><b>СТАРТ</b> (100 Мбит/с) </td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">4788</td>
+                <td class="a_c text-center">399 <s>499</s></td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">2544</td>
+                <td class="a_c text-center">424 <s>499</s></td>
+               </tr>
+              <tr>
+                <td rowspan="2" class="align-middle " text-left><b>ХИТ</b> (250 Мбит/с) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">5750</td>
+                <td class="a_c text-center">479 <s>599</s></td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3055</td>
+                <td class="a_c text-center">509 <s>599</s></td>
+               </tr>
+              <tr>
+                <td rowspan="2" class="align-middle "><b>МЕГА</b> (500 Мбит/с)   </td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559 <s>699</s></td>
+               </tr>
+              <tr>
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594 <s>699</s></td>
+               </tr>
+             </tbody>
+           </table>
+        </div> -->
+        <!-- <div class="table-responsive">
+          <h4 class="p-3 text-center">«Интернет+ТВ»
+          </h4>
+          <table class="table table-sm"> 
+            <tbody>
+             
+                <tr class="table-primary ">
+                  <th  class="align-middle h6 h3-md text-center"><small>Тарифный план</small></th>
+                  <th  class="align-middle h6 h3-md text-center"><small>Срок, мес</small></th>
+                  <th  class="align-middle h6 h3-md text-center"><small>Стоимость абонемента, ₽</small></th>
+                  <th  class="align-middle h6 h3-md text-center"><small>Стоимость при абонементе<sup>*</sup>, ₽/мес</small></th>
+                 </tr>
+             
+          
+                <td rowspan="2" class="align-middle  ml-1"><b>СТАРТ+ТВ</b><br> <small>(100Мбит/с+120ТВ) </small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">5748</td>
+                <td class="a_c text-center">479 <s>499</s></td>
+               </tr>
+              <tr class="text-center"> 
+                <td class="a_c ">6</td>
+                <td class="a_c ">3054</td>
+                <td class="a_c ">509</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><small><b>СТАРТ+КИНО</b><br> (100Мбит/с+120ТВ+more.tv/PREMIER/START) </small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559</td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><b>ХИТ+ТВ</b><br> <small> (250Мбит/с+230ТВ) </small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559</td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594</td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  text-lg-left "><b>УЛЬТРА+КИНО</b><br><small>(350Мбит/с+260ТВ+Amediateka/IVI/PREMIER/more.tv/START)</small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">8438</td>
+                <td class="a_c text-center">703 <s>879</s></td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">4482</td>
+                <td class="a_c text-center">747 <s>879</s></td>
+               </tr>
+             </tbody>
+           </table>
+           <p>* Стоимость за месяц при подключенном абонементе указана справочно.
+            Для некоторых архивных тарифных планов абонементы доступны, подключить их можно в личном кабинете.</p>
+        </div> -->
+        <!-- <div class="table-responsive">
+          <h4 class="p-3 text-center hidden">«Интернет+ТВ»
+          </h4>
+          <table class="table table-sm hidden"> 
+            <tbody> 
+              <tr class="table-primary"> 
+                <th width="30%" class="a_c b_b align-middle h6 h3-md text-center "><small>Тарифный план</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center "><small>Срок, мес</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center "><small>Стоимость абонемента, ₽</small></th>
+                <th class="a_c b_b align-middle h6 h3-md text-center "><small>Стоимость при абонементе<sup>*</sup>, ₽/мес</small></th>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1"><small><b>СТАРТ+ТВ</b> (100Мбит/с+<wbr>120ТВ)</small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">5748</td>
+                <td class="a_c text-center">479 <s>599</s></td>
+               </tr>
+              <tr class="text-center"> 
+                <td class="a_c ">6</td>
+                <td class="a_c ">3054</td>
+                <td class="a_c ">509 <s>599</s></td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1 "><small><b>СТАРТ+КИНО</b><br> (100Мбит/с+<wbr>120ТВ+<wbr>more.tv/<wbr>PREMIER/<wbr>START)</small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559 <s>689</s></td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594 <s>689</s></td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle  ml-1 "><small><b>ХИТ+ТВ</b><br> (250Мбит/с+<wbr>230ТВ)</small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">6708</td>
+                <td class="a_c text-center">559 <s>749</s></td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">3564</td>
+                <td class="a_c text-center">594 <s>749</s></td>
+               </tr>
+              <tr> 
+                <td rowspan="2" class="align-middle text-lg-left pl-3 "><small><b>УЛЬТРА+КИНО</b><br>(350Мбит/с+<wbr>260ТВ+<wbr>Amediateka/<wbr>IVI/<wbr>PREMIER/<wbr>more.tv/<wbr>START)</small></td>
+                <td class="a_c text-center">12</td>
+                <td class="a_c text-center">8438</td>
+                <td class="a_c text-center">703 <s>879</s></td>
+               </tr>
+              <tr> 
+                <td class="a_c text-center">6</td>
+                <td class="a_c text-center">4482</td>
+                <td class="a_c text-center">747 <s>879</s></td>
+               </tr>
+             </tbody>
+           </table>
+           <p>* Стоимость за месяц при подключенном абонементе указана справочно.
+            Для некоторых архивных тарифных планов абонементы доступны, подключить их можно в личном кабинете.</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- instructions -->
+    <section class="p-md-5">
+      <div class="container text-light row  bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+        <!-- <div class="col g-4">
+          <h2 class="text-center">Инструкция по подключению</h4>
+            <ol>
+              <li>Выбери подходящий тариф в личном кабинете</li>
+              <li>В течение 3 дней пополни счет до положительного баланса</li>
+            </ol>
+        </div> -->
+        <div id="instructions" class="d-flex flex-column align-items-center justify-content-center hidden">
+          <h2 class=" ">Инструкция по подключению</h4>
+          <ol class="  ">
+              <li>Перейди по <a class="text-warning" href="https://my.ecotelecom.ru/">ссылке</a> в личный кабинет</li>
+              <li>В личном кабинете в разделе "Услуги" выбери подраздел "Абонемент"</li>
+              <li>Выбери подходящий тариф</li>
+              <li>Пополни счет до положительного баланса</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- accordion -->
+    <section class="p-md-5 mt-5 mb-5" id="questions">
+        <div class="container hidden">
+            <h2 class="text-center mb-md-4 ">FAQ</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Как быть, если есть арендное оборудование и дополнительные услуги?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Скидка предоставляется только на основной тариф, арендное оборудование и дополнительные услуги
+                        оплачиваются на стандартных условиях. Для удобства оплату дополнительных услуг можно внести
+                        также на 6 или 12 месяцев вперед.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Что, если мне придется переехать?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Сможете воспользоваться услугой «Переезд», и все условия подключенного тарифа бесплатно будут
+                    перенесены по новому адресу. Если вы переедете туда, где нет возможности подключить услуги
+                    Экотелеком, вам сделают перерасчет по базовым тарифам и вернут оставшиеся деньги.  
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Можно ли включить временную блокировку услуг?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Во время пользования абонементом нельзя включить блокировку, услуги активируются на 6 или 12
+                        месяцев.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Смогу я вернуть деньги, если передумаю?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Оставшаяся сумма возвращается только при переезде на адрес, где нет возможности подключить
+                    услуги Экотелеком.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light text-center p-5 position-relative">
+      <div class="container">
+        <p class="lead">
+          © Экотелеком 2023
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(55401688, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55401688" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Andata Code-->
+<script type="application/javascript">;
+  (function(a, n, da, ta) {
+  a.andataVersion = '1.0'; a.andataHost = n;
+  var p = '//'; n += '/i/_auto/'; var s = '/dp.js';
+  var js = document.createElement(ta);
+  js.charset="UTF-8"; js.async = 1; js.src = p+n+da+s;
+  var js2 = document.getElementsByTagName(ta)[0]; js2.parentNode.insertBefore(js, js2);
+  })(window, 'mdeploy.andata.ru',
+  'ekotelekom_zisej',
+  'script');
+  </script>
+  <!-- End Andata Code -->
+  </body>
+</html>
