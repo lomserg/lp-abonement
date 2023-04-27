@@ -1,34 +1,76 @@
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(gilroy.ttf);
+  }
+* {
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
 
 .bg-image {
-    background: url('./img/hero_cat_dog.png'),
-    linear-gradient(to left, rgba(196, 161, 173, 1), rgba(117, 19, 93, 0.8));
-    /* background-image: */
+    background: linear-gradient(89.88deg, #425A38 5.71%, #51784C 57.79%);   /* background-image: */
     /* linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.4)), */
     /* url('./img/hero_cat_dog.png'); */
     object-fit: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: bottom right;
-    background-size: contain;
-    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    max-height: 700px;
     display: flex;
     align-items:center;
     justify-content: flex-end;
+    position: relative;
+}
+ .bg-image:before {
+    content: '';
+    position:absolute;
+    width: 65%;
+    height: 100%;
+    background-image: url(./img/bg-green-trans5_ab.png);
+    background-size: cover;
+    background-position: bottom right;
+    /* background-attachment: fixed; */
+    opacity: 1;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-size: 94%;
+    background-repeat: no-repeat;
+}
+.ff-gilroy {
+    font-family: Gilroy-ExtraBold;
 }
 
 .flex {
     display: flex;
 } 
-.hero-text {
-    font-family: 'Roboto', sans-serif; font-weight: 400;
-  
+
+
+.hero-title {
+    font-weight: 900; 
+    font-size: 6rem;
+}
+
+.hero-text-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .hero-title {
     font-weight: 900; 
-    font-size: 3rem;
+    font-size: 6rem;
 }
-
+.hero-title-sub-1 {
+    font-size: 5rem;
+}
+.hero-title-sub-2 {
+    font-size: 12rem;
+    line-height: 0.7;
+    letter-spacing: -5px;
+}
 .hero-title span {
     font-size: 3.5rem;
 }
@@ -37,7 +79,7 @@
 }
 
 .text-wrap {
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .hidden {
@@ -57,20 +99,44 @@
     transition-delay: 200ms;
 }
 
-@media (max-width: 800px) {
+
+@media (min-width:1600px) {
+    .bg-image:before {
+      background-size: 77%;
+    }
+}
+
+@media (max-width: 1100px) {
     .bg-image {
-        /* background: url('./img/hero_cat_dog.png'),
-        linear-gradient(to top, rgba(196, 161, 173, 1), rgba(117, 19, 93, 0.8)); */
-        align-items:flex-start;
-        justify-content: center;
-        background-position: bottom bottom;
-        text-align: center;
-        height: 60vh;
+        background: linear-gradient(89.88deg, #425A38 5.71%, #51784C 57.79%);
+         align-items: flex-start;
+         justify-content: center;
+         background-position: bottom;
+         text-align: center;
+         background-size: cover;
+         min-height: 1000px;
+    }
+    .bg-image:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom right;
+        /* background-attachment: fixed; */
+        opacity: 1;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: 86%;
+        background-repeat: no-repeat;
     }
     .hero-text {
         margin-top: 1rem;
         text-align: center;
         align-items: center;
+        z-index: 3;
     }
     .hero-title {
         text-align: center;
@@ -79,6 +145,9 @@
    
     .text-wrap {
         max-width: 550px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     }
     .hero-title > span {
         font-size: 2.5rem;
@@ -86,5 +155,45 @@
 
     .hidden {
         transition: none;
+    }
+    .hero-title {
+        font-weight: 900; 
+        font-size:3rem;
+    }
+    .hero-title-sub-1 {
+        font-size: 2rem;
+    }
+    .hero-title-sub-2 {
+        font-size: 6rem;
+        line-height: 0.7;
+        letter-spacing: -5px;
+    }
+}
+@media (max-width: 700px) {
+    .bg-image {
+        
+        align-items: flex-start;
+        justify-content: center;
+        background-position: bottom;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 600px;
+    }
+    .bg-image:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(./img/bg-green-trans4.png);
+        background-size: cover;
+        background-position: bottom right;
+        /* background-attachment: fixed; */
+        opacity: 1;
+        background-repeat: no-repeat;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: 86%;
     }
 }

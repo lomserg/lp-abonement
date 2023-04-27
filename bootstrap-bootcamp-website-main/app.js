@@ -3,8 +3,8 @@ var token = "cdc5d88b785716d0a3a5855720dab85be73d4a6d";
 var count = 4
 const input = document.querySelector('.form-adress')
 let suggestions = document.querySelector('#suggestions-wrapper')
-
-
+let citySuggestion = document.querySelectorAll('.citySuggestion')
+console.log(citySuggestion)
 
 function getSuggestions() {
     let streetArr = []
@@ -23,10 +23,11 @@ function getSuggestions() {
             "locations_geo": [{
         "lat": 55.75583, 
         "lon": 37.6173,
-        "radius_meters": 25000
+        "radius_meters": 45000
     }]
         })
     }
+    let cities = []
     fetch(url, options)
     .then(response => response.json())
     // .then(result => result.suggestions.map(item => {
@@ -34,8 +35,33 @@ function getSuggestions() {
     //     console.log(typeof item.value)
     //     return arr.push(item.value)
     // }))
-    .then(([a,b, ...rest]) => console.log(a,b))
+    .then(data =>  {
+        cities.push(...data.suggestions)
+        const html = cities.map(city => {
+            return `
+            <li class="citySuggestion">
+            <span class="name">${city.value}</span>
+          </li>
+            `
+        }).join('')
+        console.log(html)
+        suggestions.innerHTML = html
+        let liVal = suggestions.querySelectorAll('.citySuggestion')
+        console.log(liVal)
+        //innerText
+        liVal.forEach(item => {
+            item.addEventListener('click', (e)=> {
+                console.log(e.target.textContent)
+                input.value = e.target.textContent
+                suggestions.innerHTML = `<li class="citySuggestion">
+               
+              </li>` 
+            })
+        })
+    }
+    )
     .catch(error => console.log("error", error));
+
 
     // streetArr.forEach(el => suggestions.appendChild(`<p>${el}</p>`))
     // streetArr.forEach((item)=>{
@@ -46,4 +72,17 @@ function getSuggestions() {
     // console.log(streetArr)
 }
 input.addEventListener('change', getSuggestions)
+input.addEventListener('keyup', getSuggestions)
 
+
+
+function displayCity(arr) {
+    const html = arr.map(arr => {
+        return `
+        <li>
+        <span class="name">${arr.value}</span>
+      </li>
+        `
+    })
+    suggestions.innerHTML = html
+}
